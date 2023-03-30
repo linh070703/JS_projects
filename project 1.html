@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Project 1</title>
+</head>
+<body>
+    <!-- cái nút bấm để có đống alert -->
+    <button onclick="notify()">Bước tiếp theo</button>
+    <p id="person"></p>
+    <script>
+        // alert đầu tiên//
+        alert("Chào mừng bạn đến với ứng dụng JavaScript đầu tiên");
+        function notify() {
+            //các hộp thoại//
+            var name = prompt("Hãy nhập tên của bạn");
+            var city = prompt("Hãy nhập thành phố của bạn");
+            var mobile = prompt("Hãy nhập số điện thoại của bạn");
+            var email = prompt("Hãy nhập email của bạn");
+            var job = prompt("Hãy nhập công việc của bạn");
+            var person =[name +" "+ city +" "+ mobile +" "+ email +" "+ job]
+            document.getElementById("person").innerHTML = person;
+        } 
+    </script>
+</body>
+</html>
